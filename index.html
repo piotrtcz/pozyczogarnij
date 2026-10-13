@@ -116,18 +116,19 @@
                 <p>Profesjonalny sprzęt do prania ekstrakcyjnego w bardzo dobrym stanie technicznym</p>
             </div>
             <!-- Zdjęcia sprzętu -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 40px;">
+            <style>
+                .sprzet-foto { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; width: 50%; margin: 0 auto 40px; }
+                @media (max-width: 700px) { .sprzet-foto { width: 100%; gap: 8px; } }
+            </style>
+            <div class="sprzet-foto">
                     <figure style="margin: 0;">
                         <img src="puzzi-10-1-kompletny-zestaw.jpg" alt="Odkurzacz piorący Kärcher Puzzi 10/1 – kompletny zestaw: ssawka podłogowa, rura, wąż i proszek" width="1600" height="1200" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
-                        <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 8px;">Kompletny zestaw</figcaption>
                     </figure>
                     <figure style="margin: 0;">
                         <img src="puzzi-10-1-widok-z-boku.jpg" alt="Kärcher Puzzi 10/1 do wynajmu w Tczewie – widok z boku" width="1600" height="1200" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
-                        <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 8px;">Widok z boku</figcaption>
                     </figure>
                     <figure style="margin: 0;">
                         <img src="puzzi-10-1-widok-z-tylu.jpg" alt="Kärcher Puzzi 10/1 – widok z tyłu: wąż ssący i przyłącze natrysku" width="1600" height="1200" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
-                        <figcaption style="text-align: center; font-size: 14px; color: #666; margin-top: 8px;">Wąż i przyłącza</figcaption>
                     </figure>
             </div>
 
