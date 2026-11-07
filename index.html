@@ -213,13 +213,13 @@
             <!-- Porównanie Przed/Po oraz wideo w tej samej sekcji -->
             <style>
                 .efekt-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr); gap: 30px; align-items: center; margin-top: 30px; }
-                .efekt-grid img, .efekt-grid video { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+                .efekt-grid video { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
                 @media (max-width: 800px) { .efekt-grid { grid-template-columns: 1fr; gap: 20px; } }
             </style>
             <div class="efekt-grid">
-                <figure style="margin: 0;">
+                <div class="gallery-item" style="margin: 0;">
                     <img src="przed-po-kanapa.jpg" alt="Kanapa przed i po praniu Kärcher Puzzi 10/1 – widoczna różnica w kolorze i czystości tkaniny" width="1200" height="1600" loading="lazy">
-                </figure>
+                </div>
                 <figure style="margin: 0;">
                     <video controls playsinline preload="metadata" poster="puzzi-10-1-pranie-poster.jpg" width="1280" height="720">
                         <source src="puzzi-10-1-pranie.mp4" type="video/mp4">
@@ -271,7 +271,6 @@
                     </div>
                 </div>
 
-                <!-- Dodany nowy filmik Kärchera -->
                 <div class="video-card">
                     <div class="video-container">
                         <iframe loading="lazy" src="https://www.youtube.com/embed/yLSlhuQlTxk" title="How to use the Puzzi 10/1" allowfullscreen></iframe>
@@ -457,62 +456,4 @@
                 </div>
                 <div class="faq-item" style="background: var(--white);">
                     <h3><i class="fa-solid fa-circle-question"></i> Jakie są warunki kaucji?</h3>
-                    <p>Przy odbiorze sprzętu pobierana jest zwrotna kaucja w wysokości <strong>200 zł</strong> (płatna gotówką lub Blikiem), którą oddajemy w całości przy zwrocie czystego i sprawnego sprzętu.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEKCJA KONTAKT / ZAREZERWUJ -->
-    <section id="kontakt" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Zarezerwuj swój termin już teraz!</h2>
-                <p>Wybierz dogodną formę kontaktu i opcję płatności</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>Gotowy na porządki?</h2>
-                    <p>Masz pytania? Chcesz sprawdzić dostępność sprzętu na konkretny dzień? Skontaktuj się z nami od razu.</p>
-                    
-                    <ul class="contact-list">
-                        <li><i class="fa-solid fa-phone"></i> <a href="tel:516234568">516 234 568</a></li>
-                        <li class="contact-note"><i class="fa-solid fa-circle-info"></i> Jeśli nie odbieram, na pewno oddzwonię lub napisz SMS-a!</li>
-                        <li class="contact-location-item"><i class="fa-solid fa-location-dot"></i> <strong>Lubiszewo:</strong> odbiór 0 zł</li>
-                        <li class="contact-location-item"><i class="fa-solid fa-car"></i> <strong>Tczew:</strong> dowóz pod drzwi 10 zł</li>
-                        <li class="contact-location-item"><i class="fa-solid fa-map-location-dot"></i> <strong>Okolice:</strong> do uzgodnienia</li>
-                        <li><i class="fa-solid fa-clock"></i> Poniedziałek – Niedziela: 8:00 – 20:00</li>
-                        <li><i class="fa-brands fa-facebook"></i> Odwiedź nasz <a href="https://www.facebook.com/profile.php?id=61594046438708&locale=pl_PL" target="_blank" style="color: var(--primary-dark); text-decoration: underline;">profil na Facebooku</a></li>
-                    </ul>
-
-                    <!-- Metody płatności z grafikami -->
-                    <div class="payment-methods-box">
-                        <h3>Akceptowane formy płatności</h3>
-                        <p class="payment-desc">Za wynajem i kaucję zapłacisz wygodnie przy odbiorze:</p>
-                        <div class="payment-icons-wrapper">
-                            <div class="payment-badge-item">
-                                <img src="Blik_logo.jpg" alt="Płatność BLIK" class="payment-img">
-                                <span>BLIK (Przelew na telefon)</span>
-                            </div>
-                            <div class="payment-badge-item">
-                                <img src="white-cash-payment-hand-icon-free-png-7017516950364721cb6oxvedb.png" alt="Płatność gotówką" class="payment-img cash-bg">
-                                <span>Gotówka przy odbiorze</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="quick-contact-box" style="background: var(--white);">
-                    <h3>Szybka rezerwacja</h3>
-                    <p>Zadzwoń lub napisz bezpośrednio, aby potwierdzić wolny termin w kilka chwil:</p>
-                    <div class="quick-contact-buttons">
-                        <a href="tel:516234568" class="btn btn-primary btn-full"><i class="fa-solid fa-phone"></i> Zadzwoń: 516 234 568</a>
-                        <a href="sms:516234568" class="btn btn-secondary btn-full" style="background: #e0e0e0; color: #121212;"><i class="fa-solid fa-comment-sms"></i> Napisz SMS</a>
-                        <a href="https://www.facebook.com/profile.php?id=61594046438708&locale=pl_PL" target="_blank" class="btn btn-full" style="background: #0084ff; color: #ffffff;"><i class="fa-brands fa-facebook-messenger"></i> Napisz na Messengerze</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- P
+                    <p>Przy odbiorze sprzętu pobierana jest zwrotna kaucja w wysokości <strong>200 zł</strong> (płat
