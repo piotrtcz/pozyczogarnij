@@ -211,23 +211,35 @@
             </div>
 
             <!-- Porównanie Przed/Po oraz wideo w tej samej sekcji -->
+           <!-- Porównanie Przed/Po oraz wideo w tej samej sekcji -->
             <style>
-                .efekt-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr); gap: 30px; align-items: center; margin-top: 30px; }
-                .efekt-grid img, .efekt-grid video { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+                .efekt-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr); gap: 30px; align-items: stretch; margin-top: 30px; }
+                .efekt-grid .gallery-item { margin: 0; display: flex; flex-direction: column; height: 100%; }
+                .efekt-grid video { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px 12px 0 0; }
                 @media (max-width: 800px) { .efekt-grid { grid-template-columns: 1fr; gap: 20px; } }
             </style>
             <div class="efekt-grid">
-                <figure style="margin: 0;">
+                <!-- Zdjęcie ze stylem galerii -->
+                <div class="gallery-item">
                     <img src="przed-po-kanapa.jpg" alt="Kanapa przed i po praniu Kärcher Puzzi 10/1 – widoczna różnica w kolorze i czystości tkaniny" width="1200" height="1600" loading="lazy">
-                </figure>
-                <figure style="margin: 0;">
+                    <div class="gallery-caption">
+                        <h3>Kanapa – Przed i Po</h3>
+                        <p>Widoczna różnica w kolorze i czystości tkaniny.</p>
+                    </div>
+                </div>
+                
+                <!-- Wideo ze stylem galerii -->
+                <div class="gallery-item">
                     <video controls playsinline preload="metadata" poster="puzzi-10-1-pranie-poster.jpg" width="1280" height="720">
                         <source src="puzzi-10-1-pranie.mp4" type="video/mp4">
                         Twoja przeglądarka nie obsługuje odtwarzania wideo.
                     </video>
-                </figure>
+                    <div class="gallery-caption">
+                        <h3>Sprzęt w akcji</h3>
+                        <p>Zobacz, jak odkurzacz radzi sobie z praniem w praktyce.</p>
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- SEKCJA WIDEOPORADNIKI -->
